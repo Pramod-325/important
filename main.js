@@ -132,7 +132,7 @@ revealBtn.addEventListener('click',(e)=>{
     if(count===82){
         msg.textContent = "";
     }
-    if(count===2){
+    if(count===100){
         quote.textContent = "April Fool !!!"
         pic.src= "./images/hpfd.webp"
         setTimeout(()=>{exitBtn.click()},2300);
