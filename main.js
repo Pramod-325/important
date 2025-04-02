@@ -26,24 +26,6 @@ const mocks1 = [
     "Best? Unimpressed. One more. 😒",
     "Not even close. Try again. 🎯",
     "Forgot how? Retry. 🧠",
-    "On purpose? Again? 😈",
-    "Persistent... you are. Retry. 💪",
-    "That was something. Do it again. 🤷‍♀️",
-    "Rocks better? Retry. 🪨",
-    "Almost there... almost. Retry. 🤏",
-    "Get it right. Again! 🏆",
-    "Broken record. Try again. 💿",
-    "Questioning all. One more. 🤔",
-    "Try with feeling. Again! ❤️",
-    "Blindfold? Retry. 🙈",
-    "Allergic to success? Again? 🤧",
-    "Devoted to failure. Retry. 🤦‍♂️",
-    "Learning experience? Retry faster. 📚",
-    "Toddlers better. Retry. 👶",
-    "Almost not embarrassing. Retry. 😅",
-    "Lower expectations. Again! 📉",
-    "Rusty spoon. Try again. 🥄",
-    "Need coffee. One more. ☕",
     "Try harder. Again! 😤",
     "Eyes open. Retry. 👀",
     "Testing my patience? Again? ⏱️",
@@ -55,14 +37,6 @@ const mocks1 = [
     "Sharp knife needed. Retry. 🔪",
     "Strong coffee. One more. ☕",
     "Hide your skill lack. Retry. 🎭",
-    "Hands, not potato. Retry. 🥔",
-    "Secret troll? Again? 🧌",
-    "Expert errors? Retry. 🎓",
-    "Less bold. Retry. 😬",
-    "Statues alive? Retry. 🗿",
-    "Not a failure? Retry. 🥳",
-    "Admit defeat. Again! 🏳️",
-    "Pointless pencil. Retry. ✏️",
     "Find words. One more. 🗣️",
     "Pretend harder. Retry. 🎭",
     "Right side up. Retry. ⬆️",
@@ -117,22 +91,22 @@ revealBtn.addEventListener('click',(e)=>{
     revealBtn.style.top=`${py}px`;
     quote.textContent = `${mocks1[count]}`;
     count = count+1;
-    fbg.style.opacity=`${100-count}%`
-    if(count===50){
+    fbg.style.opacity=`${100-(count*3)}%`
+    if(count===6){
         msg.textContent = "Hurry Up It's Getting Dark.. 🌑"
     }
-    if(count===53){
+    if(count===8){
         msg.textContent = ""
     }
-    if(count===80){
+    if(count===9){
         quote.textContent = ""
         msg.textContent = "Alomost There... 😁";
         
     }
-    if(count===82){
+    if(count===10){
         msg.textContent = "";
     }
-    if(count===100){
+    if(count===11){
         quote.textContent = "April Fool !!!"
         pic.src= "./images/hpfd.webp"
         setTimeout(()=>{exitBtn.click()},2300);
